@@ -59,3 +59,8 @@
             underscoreText.textContent = visibleLettersList.join(" "); //update underscoreText on interface 
         } 
     }
+
+    if (correctWord.indexOf(playerGuess) < 0) { //if the player guess is INcorrect
+        maxGuesses--; //decrement remaining guesses by 1 
+        maxGuessesText.textContent = "Remaining Guesses: " + maxGuesses; //update interface with correct number of remaining guesses
+    }
