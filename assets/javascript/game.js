@@ -80,5 +80,6 @@
         $("#bkground").css("background-color", "#FFCC00"); //change background-color 
         setTimeout(reset, 1000);
     }
-}
+    
+    }
     }
