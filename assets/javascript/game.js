@@ -26,3 +26,16 @@
     var lossesText = document.getElementById("losses-text");
     var underscoreText = document.getElementById("underscore");
     var mainBackground = document.getElementById("bkground");
+
+//Functions
+
+//Main Process
+    //Generate a random correctWord
+    var correctWord = wordList[Math.floor(Math.random() * wordList.length)]; 
+    console.log(correctWord)
+
+    //Generate underscores depending on number of letters in correctWord
+    for (i = 0; i < correctWord.length; i++) { 
+        visibleLettersList.push("_");
+        underscoreText.textContent = visibleLettersList.join(" ");
+    }
