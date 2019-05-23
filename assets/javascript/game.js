@@ -45,3 +45,9 @@
         var playerGuess = event.key; //new variable for player's guess
 
     }
+
+    //Add playerGuess to guessedLettersList array IF: 1) it does not already exist 2.) it is a valid guess 3.) max guesses is > 0
+    if (guessedLettersList.indexOf(playerGuess) < 0 && validGuess.indexOf(playerGuess) >= 0 && maxGuesses > 0) { 
+        guessedLettersList.push(playerGuess); 
+        guessedLetters.textContent = "Guessed Letters: " + guessedLettersList; //update guessedLettersList on interface 
+    }
