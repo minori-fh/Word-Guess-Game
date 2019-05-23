@@ -43,3 +43,23 @@
 #underscore {
     font-size: 80px; 
 }
+
+#hint {
+    color: black; 
+    font-family: 'Lobster', cursive;
+    text-align: center; 
+}
+
+#losses-text {
+    background-color: #FFCC00; 
+    font-family: 'Lobster', cursive; 
+    font-size: 26px;
+    padding-left: 20%; 
+}
+
+#wins-text {
+    background-color: #3CB371;
+    font-family: 'Lobster', cursive; 
+    font-size: 26px; 
+    padding-left: 20%; 
+}
