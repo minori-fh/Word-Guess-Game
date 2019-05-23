@@ -44,7 +44,7 @@
     document.onkeyup = function (event) { 
         var playerGuess = event.key; //new variable for player's guess
 
-    }
+    
 
     //Add playerGuess to guessedLettersList array IF: 1) it does not already exist 2.) it is a valid guess 3.) max guesses is > 0
     if (guessedLettersList.indexOf(playerGuess) < 0 && validGuess.indexOf(playerGuess) >= 0 && maxGuesses > 0) { 
@@ -72,4 +72,13 @@
         $("#bkground").css("background-color", "#3CB371"); //change background-color 
         setTimeout(reset, 1000);
     }
+
+    //Create if statement for if player 'loses'
+    if (maxGuesses < 1) {
+        losses++; //increment loss count
+        lossesText.textContent = "Losses: " + losses; //display new loss count to interface 
+        $("#bkground").css("background-color", "#FFCC00"); //change background-color 
+        setTimeout(reset, 1000);
+    }
 }
+    }
