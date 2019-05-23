@@ -39,3 +39,9 @@
         visibleLettersList.push("_");
         underscoreText.textContent = visibleLettersList.join(" ");
     }
+
+    //Create an event when a player releases a key
+    document.onkeyup = function (event) { 
+        var playerGuess = event.key; //new variable for player's guess
+
+    }
