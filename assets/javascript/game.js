@@ -50,7 +50,7 @@
     if (guessedLettersList.indexOf(playerGuess) < 0 && validGuess.indexOf(playerGuess) >= 0 && maxGuesses > 0) { 
         guessedLettersList.push(playerGuess); 
         guessedLetters.textContent = "Guessed Letters: " + guessedLettersList; //update guessedLettersList on interface 
-    }
+    
 
     //Check guess 
     for (i = 0; i < correctWord.length; i++) { 
@@ -64,3 +64,12 @@
         maxGuesses--; //decrement remaining guesses by 1 
         maxGuessesText.textContent = "Remaining Guesses: " + maxGuesses; //update interface with correct number of remaining guesses
     }
+
+    //Create if statement for if player 'wins' 
+    if (visibleLettersList.indexOf("_")< 0) {
+        wins++; //increment win count
+        winsText.textContent = "Wins: " + wins; //display new win count to interface 
+        $("#bkground").css("background-color", "#3CB371"); //change background-color 
+        setTimeout(reset, 1000);
+    }
+}
