@@ -1,0 +1,45 @@
+
+.black {
+    font-family: 'Lobster', cursive; 
+    background-color: black; 
+    font-size: 20px; 
+    color: white; 
+    height: 600px; 
+    text-align: center; 
+    padding-top: 70px; 
+}
+
+#mainHeader {
+    font-size: 150px; 
+    text-decoration: underline; 
+}
+
+#mainBlock {
+    position: relative; 
+}
+
+#max-guesses {
+    width: 100%;
+    font-size: 30px; 
+    position: absolute; 
+    bottom: 0;
+    margin: 0 auto; 
+    padding: 4px; 
+}
+
+#guessed-letters {
+    font-family: 'Lobster', cursive; 
+    font-size: 30px; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0;
+    margin: 0 auto; 
+    padding: 4px; 
+    text-align: center; 
+    margin-right: 0px; 
+
+}
+
+#underscore {
+    font-size: 80px; 
+}
