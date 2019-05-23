@@ -28,6 +28,21 @@
     var mainBackground = document.getElementById("bkground");
 
 //Functions
+    // Create reset game function 
+    function reset() {
+        guessedLettersList = [];
+        visibleLettersList = [];
+        maxGuesses = 12; 
+        $("#bkground").css("background-color", "black");
+        maxGuessesText.innerHTML = "Remaining Guesses: " + 12;
+        guessedLetters.innerHTML = "Guessed Letters: "
+        correctWord = wordList[Math.floor(Math.random() * wordList.length)]; 
+
+        for (i = 0; i < correctWord.length; i++) { 
+            visibleLettersList.push("_");
+            underscoreText.textContent = visibleLettersList.join(" ");
+        }
+    }
 
 //Main Process
     //Generate a random correctWord
@@ -80,6 +95,6 @@
         $("#bkground").css("background-color", "#FFCC00"); //change background-color 
         setTimeout(reset, 1000);
     }
-    
+
     }
     }
