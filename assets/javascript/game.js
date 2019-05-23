@@ -51,3 +51,11 @@
         guessedLettersList.push(playerGuess); 
         guessedLetters.textContent = "Guessed Letters: " + guessedLettersList; //update guessedLettersList on interface 
     }
+
+    //Check guess 
+    for (i = 0; i < correctWord.length; i++) { 
+        if (playerGuess === correctWord[i]) { //if the player guess is correct 
+            visibleLettersList[i] = playerGuess //assign playerGuess to the appropriate underscore
+            underscoreText.textContent = visibleLettersList.join(" "); //update underscoreText on interface 
+        } 
+    }
